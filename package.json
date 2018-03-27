@@ -1,0 +1,39 @@
+{
+  "name": "ms-blog-site-ver-4.0",
+  "version": "1.0.0",
+  "description": "blog site of mine,use koa2/mysql/react/bootstrap",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=testing ./node_modules/.bin/mocha --recursive --require mocha-co",
+    "dev": "NODE_ENV=development node forever.js",
+    "production": "NODE_ENV=production node forever.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonkingStand/scaffold-node.git"
+  },
+  "keywords": [
+    "koa2",
+    "mysql",
+    "sequelize"
+  ],
+  "author": "Stan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MonkingStand/scaffold-node/issues"
+  },
+  "homepage": "https://github.com/MonkingStand/scaffold-node#readme",
+  "dependencies": {
+    "forever-monitor": "^1.7.1",
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.5",
+    "mysql": "^2.15.0",
+    "path": "^0.12.7",
+    "sequelize": "^3.20.0"
+  },
+  "devDependencies": {
+      "mocha": "^3.0.2",
+      "should": "^11.1.0"
+  }
+}
