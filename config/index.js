@@ -7,7 +7,7 @@ const commonConfig = require('./env/common');
 let envConfig;
 
 if (commonConfig.env === 'development') {
-    envConfig = require(`./env/development`);
+    envConfig = require('./env/development');
 } else {
     envConfig = require(`./env/${commonConfig.env}`);
 }

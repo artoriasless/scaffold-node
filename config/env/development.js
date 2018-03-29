@@ -6,7 +6,7 @@ module.exports = {
         port: 3306,
         user: 'root',
         password: '123',
-        database: 'blog_local',
+        database: 'local_db',
         seq_options: {
             logging: false,
             dialectOptions: {

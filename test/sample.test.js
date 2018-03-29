@@ -8,7 +8,7 @@ var should = require('should');
 
 describe('add func test', function () {
     before(function beforeTest() {
-        console.info('begin demo...');
+        console.info('begin demo...');  //  eslint-disable-line
     });
 
     it('1 + 1 should be 2', function () {

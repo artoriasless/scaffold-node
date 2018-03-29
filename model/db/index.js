@@ -1,5 +1,5 @@
 'use strict';
-
+/* global __dirname process */
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
@@ -16,13 +16,15 @@ const db = {
 };
 
 const models = {};
-fs.readdirSync(__dirname).filter(fileName => path.extname(fileName) === '.js' &&
-      fileName !== 'index.js')
-      .forEach(modelName => {
-          const model = sequelize.import(path.join(__dirname, modelName));
+const filterFunc = fileName => {
+    return (path.extname(fileName) === '.js' && fileName !== 'index.js');
+};
+fs.readdirSync(__dirname).filter(filterFunc)
+    .forEach(modelName => {
+        const model = sequelize.import(path.join(__dirname, modelName));
 
-          models[model.name] = model;
-      });
+        models[model.name] = model;
+    });
 
 Object.keys(models).forEach(key => {
     const model = models[key];
@@ -33,7 +35,7 @@ Object.keys(models).forEach(key => {
     db[key] = model;
 });
 
-if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'testing') {
+if (process.env.NODE_ENV === 'development') {
     db.sequelize.sync({
         force: true,
     });

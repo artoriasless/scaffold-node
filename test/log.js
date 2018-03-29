@@ -1,9 +1,7 @@
 'use strict';
-/**
- * 运行脚本：tnpm run test -- ./test/demo.test.js
- */
+
 module.exports = function log(title, info) {
-    console.log('\n======================================');
-    console.log('  ' + title);
-    console.log('  ' + info);
+    console.info('\n======================================');    // eslint-disable-line
+    console.info('  ' + title);  // eslint-disable-line
+    console.info('  ' + info);   // eslint-disable-line
 };
