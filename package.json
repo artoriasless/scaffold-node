@@ -1,44 +1,45 @@
 {
-  "name": "scaffold_for_node",
-  "version": "1.0.0",
-  "description": "scaffold based on node",
-  "main": "server.js",
-  "scripts": {
-    "test": "NODE_ENV=testing ./node_modules/.bin/mocha --recursive",
-    "dev": "NODE_ENV=development node forever.js",
-    "production": "NODE_ENV=production node forever.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MonkingStand/scaffold-node.git"
-  },
-  "keywords": [
-    "koa2",
-    "mysql",
-    "sequelize"
-  ],
-  "author": "Stan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MonkingStand/scaffold-node/issues"
-  },
-  "homepage": "https://github.com/MonkingStand/scaffold-node#readme",
-  "dependencies": {
-    "forever-monitor": "^1.7.1",
-    "koa": "^2.5.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.4.0",
-    "koa-static": "^4.0.2",
-    "lodash": "^4.17.5",
-    "moment": "^2.21.0",
-    "mysql": "^2.15.0",
-    "path": "^0.12.7",
-    "sequelize": "^3.20.0"
-  },
-  "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.7.0",
-    "mocha": "^5.0.5",
-    "should": "^13.2.1"
-  }
+    "name": "scaffold_for_node",
+    "version": "1.0.0",
+    "description": "scaffold based on node",
+    "main": "server.js",
+    "scripts": {
+        "test": "NODE_ENV=testing ./node_modules/.bin/mocha --recursive",
+        "dev": "nodemon NODE_ENV=development node forever.js",
+        "production": "NODE_ENV=production node forever.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MonkingStand/scaffold-node.git"
+    },
+    "keywords": [
+        "koa2",
+        "mysql",
+        "sequelize"
+    ],
+    "author": "Stan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MonkingStand/scaffold-node/issues"
+    },
+    "homepage": "https://github.com/MonkingStand/scaffold-node#readme",
+    "dependencies": {
+        "forever-monitor": "^1.7.1",
+        "koa": "^2.5.0",
+        "koa-bodyparser": "^4.2.0",
+        "koa-router": "^7.4.0",
+        "koa-static": "^4.0.2",
+        "lodash": "^4.17.5",
+        "moment": "^2.21.0",
+        "mysql": "^2.15.0",
+        "path": "^0.12.7",
+        "sequelize": "^3.20.0"
+    },
+    "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-plugin-react": "^7.7.0",
+        "mocha": "^5.0.5",
+        "nodemon": "^1.17.2",
+        "should": "^13.2.1"
+    }
 }
