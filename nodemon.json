@@ -1,0 +1,13 @@
+{
+	"restartable": "rs",
+	"ignore": [
+		".git",
+		".gitignore",
+		"node_modules/**/node_modules"
+	],
+	"verbose": true,
+	"execMap": {},
+	"watch": [],
+	"env": {},
+	"ext": "js json css postcss"
+}
